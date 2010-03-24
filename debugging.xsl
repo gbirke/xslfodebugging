@@ -49,7 +49,7 @@
   </xsl:template>
   
   <!-- Copy all other node types 1:1 -->
-  <xsl:template match="@*|text()|comment()|processing-instruction">
+  <xsl:template match="@*|text()|comment()|processing-instruction()">
     <xsl:copy-of select="."/>
   </xsl:template>
   
